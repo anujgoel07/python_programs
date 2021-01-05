@@ -1,0 +1,9 @@
+n=int(input())
+arr=list(map(int,input().split()))
+arr = [x for x in arr if x>=0]
+minimum=min(arr)
+maximum=max(arr)
+for i in range(minimum,107):
+    if i not in arr:
+        print(i)
+        break
